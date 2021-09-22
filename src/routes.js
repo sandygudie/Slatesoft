@@ -1,6 +1,6 @@
 import { Navigate } from 'react-router-dom';
 import DashboardLayout from 'src/components/DashboardLayout';
-import MainLayout from 'src/components/MainLayout';
+// import MainLayout from 'src/components/MainLayout';
 import Account from 'src/pages/Account';
 import CustomerList from 'src/pages/CustomerList';
 import Dashboard from 'src/pages/Dashboard';
@@ -25,7 +25,6 @@ const routes = [
   },
   {
     path: '/',
-    element: <MainLayout />,
     children: [
       { path: 'login', element: <Login /> },
       { path: 'register', element: <Register /> },
